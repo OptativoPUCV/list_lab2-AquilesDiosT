@@ -70,7 +70,7 @@ void pushFront(List * list, const void * data) {
   else n->next = n; 
   list->tail = n;*/
 
-  if(list->head != NULL) printf("cesar gei");
+  if(list->head == NULL) printf("cesar gei");
 }
 
 void pushBack(List * list, const void * data) {
