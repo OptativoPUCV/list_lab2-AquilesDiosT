@@ -70,8 +70,6 @@ void pushFront(List * list, const void * data) {
   if(list->head != NULL) list->head = n;
   else n->next = n; 
   list->tail = n;
-  int *x = (int*)list->head->data;
-  printf("aaaa%i", *x);
 }
 
 void pushBack(List * list, const void * data) {
