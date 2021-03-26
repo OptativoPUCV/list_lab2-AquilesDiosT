@@ -65,7 +65,7 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, const void * data) {
-  int *x = (int*)list->current->data;
+  int *x = (int*)data;
   printf("hola%d", *x);
 }
 
