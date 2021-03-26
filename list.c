@@ -19,8 +19,8 @@ struct List {
 
 typedef List List;
 
-Node * createNode(const void * data) {
-    Node * new = (Node *)malloc(sizeof(Node));
+Node *createNode(const void * data) {
+    Node * new = (Node *) malloc(sizeof(Node));
     assert(new != NULL);
     new->data = data;
     new->prev = NULL;
@@ -28,17 +28,19 @@ Node * createNode(const void * data) {
     return new;
 }
 
-List * createList() {
+List *createList() {
   List *lista = (List *) malloc(sizeof(List));
   lista->head = NULL;
   lista->tail = NULL;
   lista->current = NULL; 
-  printf("jugar valorant");
   return lista;
 }
 
-void * firstList(List * list) {
-    return NULL;
+void *firstList(List * list) {
+  if(list == NULL) return NULL;
+  if(list->head == NULL) return NULL;
+  list->current = list->head;
+  return (List*)list->current->data;
 }
 
 void * nextList(List * list) {
