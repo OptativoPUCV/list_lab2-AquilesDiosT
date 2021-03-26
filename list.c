@@ -68,8 +68,6 @@ void pushFront(List * list, const void * data) {
   Node *n = createNode(data);
   n->next = list->head; 
   
-  int *x = (int*)list->head->data;
-  printf("aaaa%i", *x);
 }
 
 void pushBack(List * list, const void * data) {
