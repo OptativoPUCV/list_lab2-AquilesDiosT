@@ -65,8 +65,10 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, const void * data) {
-  int *x = (int*)data;
-  printf("hola%d", *x);
+  Node *n = createNode(data);
+  if(list->head == NULL) list->head = n;
+  else list->tail->next = n; 
+  list->tail = n;
 }
 
 void pushBack(List * list, const void * data) {
