@@ -72,7 +72,8 @@ void pushFront(List * list, const void * data) {
     list->head = &data;
   }
   */
-  printf("hola%p", list->head->data);
+
+  printf("hola%ls", (int*)list->current->data);
 }
 
 void pushBack(List * list, const void * data) {
