@@ -65,11 +65,12 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, const void * data) {
-  Node *n = createNode(data);
-  
+  /*Node *n = createNode(data);
   if(list->head == NULL) list->head = n;
   else n->next = n; 
-  list->tail = n;
+  list->tail = n;*/
+
+  if(list->head != NULL) printf("cesar gei");
 }
 
 void pushBack(List * list, const void * data) {
