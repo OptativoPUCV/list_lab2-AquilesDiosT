@@ -65,6 +65,14 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, const void * data) {
+  /*
+  if(list->current->head == NULL) {
+    list->current->head 
+  } else {
+    list->head = &data;
+  }
+  */
+  printf("%p", data);
 }
 
 void pushBack(List * list, const void * data) {
