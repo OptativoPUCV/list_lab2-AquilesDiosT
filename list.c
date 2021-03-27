@@ -110,7 +110,7 @@ void * popCurrent(List * list) {
     free(n);
   }
   
-  if(n == list->head) {
+  if(n == list->tail) {
     printf("x");
     if(n->next != NULL) {
       n->next->prev = n->prev;
