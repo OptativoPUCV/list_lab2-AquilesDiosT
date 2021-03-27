@@ -99,17 +99,17 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
   Node *n = list->current;
- 
-    if(n->next != NULL) {
-    n->next->prev = n->prev;
-    } else {
-    list->head = n->next;
-    }
-    if(n->prev != NULL) n->prev->next = n->next;
-    else list->head = n->next;   
-    free(n);
+  const void *d = list->current->data;
+  if(n->next != NULL) {
+  n->next->prev = n->prev;
+  } else {
+  list->head = n->next;
+  }
+  if(n->prev != NULL) n->prev->next = n->next;
+  else list->head = n->next;   
+  free(n);
 
-    return (void*)list->current->data;
+  return (void *)d;
 }
 
 void cleanList(List * list) {
