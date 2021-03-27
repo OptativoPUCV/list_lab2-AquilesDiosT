@@ -663,3 +663,11 @@ Sat Mar 27 23:29:27 UTC 2021:
  tests:  11|1
 total_score: 55/70
 77e2749
+Sat Mar 27 23:30:04 UTC 2021: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+free(): double free detected in tcache 2
+free(): double free detected in tcache 2
+ tests:  0|0
+free(): double free detected in tcache 2
+bb7d8f1
