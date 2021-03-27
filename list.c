@@ -108,7 +108,7 @@ void * popCurrent(List * list) {
   else list->head = n->next;   
   
   free(n);
-  return n;
+  return list;
 }
 
 void cleanList(List * list) {
