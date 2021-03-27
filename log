@@ -671,3 +671,11 @@ free(): double free detected in tcache 2
  tests:  0|0
 free(): double free detected in tcache 2
 bb7d8f1
+Sat Mar 27 23:33:20 UTC 2021: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+free(): double free detected in tcache 2
+free(): double free detected in tcache 2
+ tests:  0|0
+free(): double free detected in tcache 2
+3b2a894
