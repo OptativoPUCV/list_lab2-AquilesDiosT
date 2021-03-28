@@ -108,7 +108,7 @@ void * popCurrent(List * list) {
   if(n->prev != NULL) n->prev->next = n->next;
   else list->head = n->next;   
 
-  if(n->next != NULL) list->tail->prev = n; 
+  list->tail = list->tail->prev;
    
   
   return (void *)d;
