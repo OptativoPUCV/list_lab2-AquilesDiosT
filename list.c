@@ -99,7 +99,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
   Node *n = list->current;
-  const void *d = list->current->data;
+  const void *d = n->data;
   if(n->next != NULL) {
   n->next->prev = n->prev;
   } else {
