@@ -110,7 +110,7 @@ void * popCurrent(List * list) {
   
   list->tail = list->tail->prev;
   list->tail->next = NULL;
-  printf("%p", (void *) d);
+  
   free(n);
   return (void *)d;
 }
