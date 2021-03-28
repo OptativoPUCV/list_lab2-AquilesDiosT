@@ -110,8 +110,6 @@ void * popCurrent(List * list) {
   
   list->tail = n;
   
-   
-  free(n);
   return (void *)d;
 }
 
