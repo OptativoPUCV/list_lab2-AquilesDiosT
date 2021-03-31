@@ -37,11 +37,11 @@ List *createList() {
 }
 
 void *firstList(List * list) {
-  const void *d = list->current->data;
+  
   if(list == NULL) return NULL;
   if(list->head == NULL) return NULL;
   list->current = list->head;
-  return (void*)d;
+  return (void*)list->current->data;
 }
 
 void * nextList(List * list) {
