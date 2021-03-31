@@ -93,16 +93,15 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  Node *n = list->current;
   const void *d = list->current->data;
-  if(n->next != NULL) {
-  n->next->prev = n->prev;
-  } else {
+  Node *n = list->current;
+  //if(n->next != NULL)
+   n->next->prev = n->prev;
+  //else 
   list->head = n->next;
-  }
+
   if(n->prev != NULL) n->prev->next = n->next;
   else list->head = n->next;   
-  
   if(list->current == list->tail) {
     list->tail = list->tail->prev;
     list->tail->next = NULL;
