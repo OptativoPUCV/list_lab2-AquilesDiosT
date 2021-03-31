@@ -37,10 +37,11 @@ List *createList() {
 }
 
 void *firstList(List * list) {
+  const void *d = list->current->data;
   if(list == NULL) return NULL;
   if(list->head == NULL) return NULL;
   list->current = list->head;
-  return (List*)list->current->data;
+  return (List*)d;
 }
 
 void * nextList(List * list) {
@@ -112,8 +113,6 @@ void * popCurrent(List * list) {
     list->tail = list->tail->prev;
     list->tail->next = NULL;
   }
-  
-
   free(n);
   return (void *)d;
 }
